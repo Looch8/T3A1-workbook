@@ -38,6 +38,10 @@ Below is a description of the process of using source control for a large projec
 
 </br>
 
+## <div align="center">**Q2 - What are the most important aspects of quality software?**</div>
+
+</br>
+
 <div style="page-break-after: always; visibility: hidden">
 \pagebreak
 </div>
