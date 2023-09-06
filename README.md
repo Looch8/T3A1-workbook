@@ -40,6 +40,39 @@ Below is a description of the process of using source control for a large projec
 
 ## <div align="center">**Q2 - What are the most important aspects of quality software?**</div>
 
+Quality software is important for ensuring applications run reliably and meet expectations of the user. Six important aspects of quality software include Reliablity, Functionality, Usability, Maintainability, Efficiency, and Security.
+
+**Reliability** - Software reliability is the likelihood of a computer program operating without failures within a specific timeframe and under defined conditions. It represents a user-orientated aspect of software quality, focusing on the program's performance rather than its design, making it a dynamic metric rather than a static one. It assesses how frequently defects lead to issues, making it crucial for software managers, engineers, and product managers dealing with software-integrated products, as well as end-users. Reliability denotes the software's capacity to consistently execute its functions without glitches or crashes, therefore providing confidence that it will perform correctly over an extended duration [6].
+
+For examaple, In the case of an e-commerce website, it should consistently and without interruption handle order processing, secure payment transactions, and maintain system stability, even during periods of high user traffic.
+
+**Functionality** - Functionality, within the realm of software quality, includes all the required and defined capabilities of a system. Superior quality is attained in this situation when the executed functionality aligns precisely with the specifications.
+Functionality includes the capacity to execute the tasks it was intended for, ensuring that all features and functions operate accurately and in accordance with expectations [7].
+For example, in the case of word processing software, it should effectively manage activities such as text formatting, spell checking, and document saving.
+
+**Usability** - Usability refers to how easy and pleasant it is for people to use things like websites, software, gadgets, or apps. It's about making sure the software works well, are efficient, and satifies users.
+Usability focuses on making it simple for users to use the software. Things like easy-to-use menus, clear instructions, and logical layouts make software more usable.
+For example, a mobile app should have a clear and easy-to-use design with straightforward buttons and menus, so users can easily do what they want without getting confused [8].
+
+**Maintainability** - Maintainability involves how simple it is to fix, enhance, and understand software code. It comes into effect once the software has been deployed, as part of the ongoing software development cycle.
+
+To ensure maintainability, developers continuously update the software to accommodate new customer needs and resolve issues experienced by users. This encompasses tasks like fixing errors, enhancing existing functions, and adjusting the code to prevent future problems. The software's long-term viability relies on a developer's capacity to sustain these updates.
+
+Maintainability demonstrates how effortless it is to make updates, changes, or fixes to the software. Well-organised code, clear documentation, and adherence to coding rules all contribute to maintainability.
+
+For example, in an open-source project, having comprehensive documentation and adhering to coding guidelines is essential, as it simplifies the process for new contributors to understand and contribute to the codebase [9].
+
+**Efficiency** - Efficiency in software refers to how quickly it can complete tasks while using as little system resources as possible. Efficient software makes effective use of the available computer resources.
+For example, a video editing program should be able to export videos quickly without putting excessive strain on the computer's CPU or memory.
+
+Efficiency testing measures the number of test cases executed within a specific time frame, usually in hours. It assesses how efficiently an application performs a particular function by considering the amount of code and testing resources required [10].
+
+**Security** - Secure software development is the method through which developers create and test code with protection against both internal and external risks. It involves recognising potential vulnerabilities in software and understanding how threats can exploit them. The most effective software security is achieved when it is carefully planned and consistently managed throughout the entire software development life cycle (SDLC), especially in applications that handle sensitive data or perform critical functions.
+
+Security is crucial for protecting software and its data from unauthorised access, vulnerabilities, and cyber threats. Software should incorporate best security practices to protect confidential information.
+
+For example, an online banking application should utilise encryption to protect user data and should have built-in methods to prevent unauthorised access to user accounts [11].
+
 </br>
 
 <div style="page-break-after: always; visibility: hidden">
@@ -57,3 +90,15 @@ Below is a description of the process of using source control for a large projec
 [4] [https://www.abtasty.com/blog/git-branching-strategies/](https://www.abtasty.com/blog/git-branching-strategies/#:~:text=A%20branching%20strategy%2C%20therefore%2C%20is,interact%20with%20a%20shared%20codebase.)
 
 [5] [https://aws.amazon.com/devops/continuous-integration/](https://aws.amazon.com/devops/continuous-integration/#:~:text=Continuous%20integration%20refers%20to%20the,for%20a%20release%20to%20production.)
+
+[6] [https://www.sciencedirect.com/science/article/abs/pii/](https://www.sciencedirect.com/science/article/abs/pii/S0065245808602995#:~:text=Software%20reliability%20is%20the%20probability,is%20dynamic%20rather%20than%20static.)
+
+[7] [https://www.caktusgroup.com/blog/2018/03/14/what-software-quality-assurance/](https://www.caktusgroup.com/blog/2018/03/14/what-software-quality-assurance/#:~:text=assessed%20for%20each.-,Functionality,as%20described%20in%20the%20specifications.)
+
+[8] [https://www.usability.gov/what-and-why/usability-evaluation.](https://www.usability.gov/what-and-why/usability-evaluation.html#:~:text=Usability%20refers%20to%20the%20quality,overall%20satisfaction%20of%20the%20user.)
+
+[9] [https://www.sealights.io/software-quality/software-maintainability-what-it-means-to-build-maintainable-software/](https://www.sealights.io/software-quality/software-maintainability-what-it-means-to-build-maintainable-software/#:~:text=Maintainability%20refers%20to%20the%20ease,customer%20has%20received%20the%20product.)
+
+[10] [https://www.softwaretestinghelp.com/efficiency-testing/](https://www.softwaretestinghelp.com/efficiency-testing/)
+
+[11] [https://www.parkside-interactive.com/software-security/](https://www.parkside-interactive.com/software-security/#:~:text=What%20is%20secure%20software%20development%3F,and%20how%20threats%20are%20exploited.)
