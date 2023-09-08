@@ -75,6 +75,36 @@ For example, an online banking application should utilise encryption to protect 
 
 </br>
 
+## <div align="center">**Q3 - Outline a standard high level structure for a MERN stack application and explain the components**</div>
+
+High level structure for a MERN stack includes several components.
+
+1.**Frontend(React.js)** - React is the The highest layer of the MERN stack. React is a declarative JavaScript framework designed for crafting dynamic client-side applications within HTML. React enables developers to construct interfaces using straightforward components, link them to data on the backend server, and finally render them as HTML.
+
+The frontend relies on React.js, which is organised into components to enhance code structure and promote reusability. Furthermore, React facilitates client-side routing by integrating with libraries like React Router to enable navigation within the application.
+
+React excels in managing stateful, data-driven interfaces with minimal code and complexity, offering a comprehensive range of features that one would expect from a modern web framework. This includes robust support for tasks such as form handling, error management, event handling, and list management [12,13].
+
+2.**Backend(Node.js and Express.js)** - One level deeper in the stack, we have the Express.js framework operating within a Node.js server environment. Express.js is described as a "swift, flexible, and minimalistic web framework for Node.js". Express.js includes strong mechanisms for URL routing, which involves matching incoming URLs with server functions, as well as for managing HTTP requests and responses.
+
+To establish a connection between the React.js frontend, whether through XML HTTP Requests (XHRs) or GET and POST requests, you can link up with Express.js functions that drive your application's functionality. These functions, in turn, use MongoDB's Node.js drivers, utilising either callbacks or promises, to access and modify data within the MongoDB database [12,14].
+
+-   The server aspect is handled by Node.js, serving as the runtime for the server-side operations.
+-   API Routes are employed to outline specific routes and controllers responsible for processing HTTP requests and delivering data to the frontend, constituting the core of the application's business logic.
+-   Functions are implemented to execute various tasks such as authentication, validation, and error handling, enhancing the application's robustness.
+-   For seamless database integration, a library like Mongoose is used to establish a connection with MongoDB, thereby enabling efficient interaction with the database
+    [12,14].
+
+**Database(MongoDB)** - MongoDB serves as a NoSQL database aimed for the storage of organised data within collections. The design of the database schema should align closely with the specific data requirements of the application.
+If your application involves the storage of any form of data, such as user profiles, content, comments, uploads, events, and more, it's important to employ a database that aligns seamlessly with the ease of use provided by React, Express, and Node.js.
+MongoDB excels at this. JSON documents originating from your React.js frontend can be transmitted to the Express.js server, where they undergo processing and are subsequently stored directly within MongoDB for subsequent retrieval [12,15].
+
+</br>
+
+## <div align="center">**Q4 - A team is about to engage in a project, developing a website for a small business. What knowledge and skills would they need in order to develop the project?**</div>
+
+</br>
+
 <div style="page-break-after: always; visibility: hidden">
 \pagebreak
 </div>
@@ -102,3 +132,11 @@ For example, an online banking application should utilise encryption to protect 
 [10] [https://www.softwaretestinghelp.com/efficiency-testing/](https://www.softwaretestinghelp.com/efficiency-testing/)
 
 [11] [https://www.parkside-interactive.com/software-security/](https://www.parkside-interactive.com/software-security/#:~:text=What%20is%20secure%20software%20development%3F,and%20how%20threats%20are%20exploited.)
+
+[12] [https://www.mongodb.com/mern-stack](https://www.mongodb.com/mern-stack)
+
+[13] [https://www.w3schools.com/REACT/DEFAULT.ASP](https://www.w3schools.com/REACT/DEFAULT.ASP)
+
+[14] [https://expressjs.com/en/5x/api.html](https://expressjs.com/en/5x/api.html)
+
+[15] [https://www.techtarget.com/searchdatamanagement/definition/MongoDB](https://www.techtarget.com/searchdatamanagement/definition/MongoDB)
