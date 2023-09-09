@@ -126,6 +126,34 @@ In summary, effective teamwork, communication, and collaborative skills are indi
 
 </br>
 
+## <div align="center">**Q5 - With reference to one of your own projects, discuss what knowledge or skills were required to complete your project, and to overcome challenges**</div>
+
+In reference to my Rock, Paper Scissors, terminal project I made in term 2, the knowledge and skills required for me to complete this project included Python programming, randomisation, input handling, conditional statements, file handling (CSV), external libraries, error handling, testing and debugging, project management, and documentation.
+
+1. **Python Programming** - Proficiency in Python is essential to write the code for the game. You need to understand Python syntax, data structures, and control flow.
+
+2. **Randomisation** - Knowledge of Python's 'random' module is necessary for generating random choices for the computer player.
+
+3. **Input Handling** - Skills in handling user input is crucial for getting the player's choice and ensuring that the input is valid. For example, The use of a 'try...except' block for error handling.
+
+4. **Conditional Statements** - Understanding conditional statements ('if', 'elif', 'else') is important for determining the game's outcome based on player and computer choices.
+
+5. **File Handling (CSV)** - Knowledge of file operations in Python, such as opening, reading, and writing to CSV files, is needed to store and retrieve game scores.
+
+6. **External Libraries** - Familiarity with external libraries like 'colored' and 'art' for text formatting and styling, as well as 'emoji' for adding emojis to the output, enhances the game's user experience.
+
+7. **Error Handling** - Implementing error handling to address potential issues, like file-related errors, enhances the robustness of the program.
+
+8. **Testing and Debugging** - Skills in testing and debugging are vital to ensure that the game functions correctly and that any issues are resolved effectively.
+
+9. **Project Management** - Managing the project as a whole required skills in project planning, task allocation, and version control (Git).
+
+10. **Documentation** - Writing clear and concise comments within the code helps future developers understand the logic and purpose of each section.
+
+To overcome challenges, project management skills, problem-solving abilities, and a willingness to research and learn new concepts or libraries as needed are valuable. Furthermore, seeking help from online communities or forums such as stack overflow when encountering specific coding challenges can be beneficial.
+
+</br>
+
 <div style="page-break-after: always; visibility: hidden">
 \pagebreak
 </div>
