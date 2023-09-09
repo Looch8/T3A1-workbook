@@ -154,6 +154,96 @@ To overcome challenges, project management skills, problem-solving abilities, an
 
 </br>
 
+## <div align="center">**Q6 - With reference to one of your own projects, evaluate how effective your knowledge and skills were for this project, and suggest changes or improvements for future projects of a similar nature**</div>
+
+1. **Python Programming Skills**
+
+    - **Effectiveness** My proficiency in Python allowed me to write clean and functional code for the game.
+
+    - **Improvement** Continually expanding my knowledge of Python and staying updated with the latest language features and best practices can help me write more efficient and maintainable code in the future.
+
+    ```python
+    player_choice = input(
+        f"\n{fg('yellow')}Choose 🪨  rock, 📄 paper, or ✂️ scissors - or type 'end' to quit: \n\n").lower()
+    if player_choice == "end":
+        print(emoji.emojize(
+            f'\n{fg(5)}Goodbye, thank you for playing! 😊', language='alias'))
+        exit()
+    elif player_choice not in ['rock', 'paper', 'scissors']:
+        raise ValueError(f'{fg(28)} {player_choice} is not a valid choice, please choose again.')
+    ```
+
+2. **Randomisation**
+
+    - **Effectiveness** I successfully used the `random` module to generate computer choices randomly.
+
+    - **Improvement** I should consider customizing the randomisation logic to make the game more challenging. For example, I can adjust the probability of the computer choosing certain options. Here's an example of customizing the computer choice:
+
+    ```python
+    def get_computer_choice():
+        try:
+            computer_choices = ['rock', 'paper', 'scissors', 'scissors', 'scissors']
+            computer_choice = random.choice(computer_choices)
+            return computer_choice
+        except IndexError:
+            print('Element not present in list, or list is empty.')
+            return None
+        except Exception as e:
+            print(f'An error occurred: {e}')
+            return None
+    ```
+
+3. **Input Handling**
+
+    - **Effectiveness** My input handling with error checking worked well.
+
+    - **Improvement** I should enhance user input validation with additional error messages or allow flexible input formats. For instance, I can accept single-letter inputs for choices ('r' for 'rock'). Here's an example of flexible input handling:
+
+    ```python
+    while True:
+        player_choice = input(
+            f"\n{fg('yellow')}Choose 🪨  rock, 📄 paper, or ✂️ scissors - or type 'end' to quit: \n\n").lower()
+        if player_choice == "end":
+            print(emoji.emojize)(
+                f'\n{fg(5)}Goodbye, thank you for playing! 😊')
+            exit()
+        elif player_choice not in ['rock', 'paper', 'scissors', 'r', 'p', 's']:
+            print(f'{fg(28)} Invalid choice, please choose again.')
+    ```
+
+4. **Conditional Statements**
+
+    - **Effectiveness** My conditional statements correctly determined game outcomes.
+
+    - **Improvement** I should streamline the conditional logic or make it more scalable for future game expansions (e.g., adding more choices). I can use a dictionary to map player and computer choices to outcomes, making the code more concise and maintainable.
+
+Here's an example of using a dictionary to map outcomes:
+
+```python
+outcomes = {
+    ('rock', 'scissors'): 'player',
+    ('paper', 'rock'): 'player',
+    ('scissors', 'paper'): 'player',
+    ('scissors', 'rock'): 'computer',
+    ('rock', 'paper'): 'computer',
+    ('paper', 'scissors'): 'computer',
+}
+
+def play_round(player_choice, computer_choice):
+    if player_choice == computer_choice:
+        return 'draw'
+    else:
+        return outcomes.get((player_choice, computer_choice), 'computer')
+```
+
+By implementing these improvements, I can further enhance my coding skills and create a more robust and flexible Rock, Paper, Scissors game.
+
+</br>
+
+## <div align="center">**Q7 - Explain control flow, using an example from the JavaScript programming language**</div>
+
+</br>
+
 <div style="page-break-after: always; visibility: hidden">
 \pagebreak
 </div>
