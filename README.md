@@ -103,6 +103,27 @@ MongoDB excels at this. JSON documents originating from your React.js frontend c
 
 ## <div align="center">**Q4 - A team is about to engage in a project, developing a website for a small business. What knowledge and skills would they need in order to develop the project?**</div>
 
+The knowledge and skills required to effectively develop a web project in a team include Web development skills, design skills, and team collaboration, among other skills.
+
+**Web Development Skills** - The team needs to have a thorough understanding and skillset in web development in particularly Front end, back-end, database, version controll and web security.
+
+**Design skills** - User Experience (UX) is concerned with creating an emotional response from users by combining a website's ease of use with the integration of interactive and dynamic elements, ultimately creating a pleasant browsing experience.
+UX Design involves crafting the website's visual components, layout, and overall user journey, utilising tools like Adobe XD, Sketch, Figma, or Adobe Photoshop.
+Responsive Design ensures that the website functions effectively and appears appealing on various devices and screen dimensions, including smartphones, tablets, and desktop computers.
+Usability Testing entails the process of gathering user feedback through testing, allowing for improvements based on user behavior and preferences [16].
+
+**Team Collaboration** - Collaboration offers numerous advantages in web design and development. Here are some of the benefits of working together:
+
+1. Enhanced Problem-Solving: When a team of experts with diverse skill sets collaborates, they can swiftly and efficiently identify and resolve issues. Collaboration allows for the consideration of multiple viewpoints, resulting in superior problem-solving.
+
+2. Improved Communication: Collaboration nurtures communication among team members. As each member shares their ideas and expertise, the team can collectively formulate a unified vision for the website.
+
+3. Elevated Work Quality: Through teamwork, a group can produce work of higher quality compared to an individual working in isolation. Each team member brings their unique strengths to the project, resulting in a visually appealing, functional, and user-friendly website.
+
+4. Accelerated Project Delivery: Collaboration can expedite the development process. When a team collaborates, they can break down the project into smaller tasks and work on them simultaneously, leading to a quicker project delivery.
+
+In summary, effective teamwork, communication, and collaborative skills are indispensable for the successful execution of a project [17].
+
 </br>
 
 <div style="page-break-after: always; visibility: hidden">
@@ -140,3 +161,7 @@ MongoDB excels at this. JSON documents originating from your React.js frontend c
 [14] [https://expressjs.com/en/5x/api.html](https://expressjs.com/en/5x/api.html)
 
 [15] [https://www.techtarget.com/searchdatamanagement/definition/MongoDB](https://www.techtarget.com/searchdatamanagement/definition/MongoDB)
+
+[16] [https://webflow.com/blog/web-designer-skills?](https://webflow.com/blog/web-designer-skills?utm_source=google&utm_medium=search&utm_campaign=SS-GoogleSearch-Nonbrand-DynamicSearchAds-Core&utm_term=aud-936979375321:dsa-45211625058___491754501325__&gclid=CjwKCAjwr_CnBhA0EiwAci5siupegDc0579nqKO-ndQOsAqm1EMLRNKykQveF2nhVx2-VCtDdjvEIBoC6zYQAvD_BwE)
+
+[17] [https://www.linkedin.com/pulse/role-teamwork-collaboration-web-design-development/](https://www.linkedin.com/pulse/role-teamwork-collaboration-web-design-development-onviqa/)
