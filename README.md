@@ -167,7 +167,7 @@ To overcome challenges, project management skills, problem-solving abilities, an
         f"\n{fg('yellow')}Choose 🪨  rock, 📄 paper, or ✂️ scissors - or type 'end' to quit: \n\n").lower()
     if player_choice == "end":
         print(emoji.emojize(
-            f'\n{fg(5)}Goodbye, thank you for playing! 😊', language='alias'))
+            f'\n{fg(5)}Goodbye, thank you for playing! 😊'))
         exit()
     elif player_choice not in ['rock', 'paper', 'scissors']:
         raise ValueError(f'{fg(28)} {player_choice} is not a valid choice, please choose again.')
