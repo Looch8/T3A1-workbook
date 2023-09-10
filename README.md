@@ -351,6 +351,84 @@ In this example, type coercion happens when evaluating the `string` variable in 
 
 </br>
 
+## <div align="center">**Q9 - Explain data types, using examples from the JavaScript programming language**</div>
+
+In programming, data types refer to the sort of information that a variable is capable of storing or representing. Each data type has distinct attributes and functions connected to it. In JavaScript, there are 8 data types [20]:
+
+1. String
+2. Number
+3. BigInt
+4. Boolean
+5. Undefined
+6. Null
+7. Symbol
+8. Object
+
+9. **String**:
+   Strings are sequences of characters enclosed in either single or double quotes.
+
+    ```javascript
+    let single = "Luke";
+    let double = "Hello, world!";
+    ```
+
+10. **Number**:
+    Numbers represent numeric values, which can be integers or floating-point numbers.
+
+    ```javascript
+    let integerNum = 30; // Integer
+    let floatingNum = 19.99; // Floating-point number
+    ```
+
+11. **BigInt**:
+    BigInt is used to represent large integers beyond the range of regular numbers.
+
+    ```javascript
+    let bigInt = 34857348349683482632393435729742432n;
+    ```
+
+12. **Boolean**:
+    Booleans have only two possible values, `true` or `false`.
+
+    ```javascript
+    let isTrue = true;
+    let isNotTrue = false;
+    ```
+
+13. **Undefined**:
+    Variables declared but not assigned a value are `undefined`.
+
+    ```javascript
+    let name;
+    ```
+
+14. **Null**:
+    `null` represents the intentional absence of any value.
+
+    ```javascript
+    let nullValue = null;
+    ```
+
+15. **Symbol**:
+    Symbols are unique and immutable values.
+
+    ```javascript
+    const symbolDataType = Symbol("description");
+    ```
+
+16. **Object**:
+    Objects are collections of key-value pairs.
+
+    ```javascript
+    let person = {
+    	firstName: "John",
+    	lastName: "Doe",
+    	age: 30,
+    };
+    ```
+
+</br>
+
 <div style="page-break-after: always; visibility: hidden">
 \pagebreak
 </div>
@@ -394,3 +472,5 @@ In this example, type coercion happens when evaluating the `string` variable in 
 [18] [https://developer.mozilla.org/en-US/docs/Glossary/Control_flow](https://developer.mozilla.org/en-US/docs/Glossary/Control_flow)
 
 [19] [https://www.geeksforgeeks.org/what-is-type-coercion-in-javascript/](https://www.geeksforgeeks.org/what-is-type-coercion-in-javascript/)
+
+[20] [https://www.w3schools.com/js/js_datatypes.asp](https://www.w3schools.com/js/js_datatypes.asp)
