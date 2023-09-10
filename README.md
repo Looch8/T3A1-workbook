@@ -242,6 +242,47 @@ By implementing these improvements, I can further enhance my coding skills and c
 
 ## <div align="center">**Q7 - Explain control flow, using an example from the JavaScript programming language**</div>
 
+Control flow refers to the sequence in which instructions or statements are executed within a program. It provides the capability to manage your code, enabling you to make choices, repeat actions, and navigate to various segments of the code based on specific conditions. The concept of control flow is fundamental when it comes to creating programs that are both adaptable and capable of responding dynamically [18].
+
+Code usually runs in a linear path from the first line to the last line, unless there are structures, such as conditionals and loops, which are commonly encountered and serve to alter the course of control flow.
+
+For example, we can use conditional structures like '"if, else" statements to make decisions in our code. We can execute different blocks of code depending on whether certain conditons are true or false.
+
+```let age = 30;
+if (age < 18) {
+    console.log("You are too young to enter.");
+} else if (age >= 18) {
+    console.log("you may enter.");
+}
+```
+
+In this code, the control flow is determined by the value of the `age` variable.
+
+1. `let age = 30;`: This line declares a variable named `age` and assigns it a value of 30.
+
+2. The first `if` statement checks if the `age` is less than 18: `if (age < 18)`. If this condition is true, it means the person is younger than 18, and the code inside the first block is executed:
+
+    ```javascript
+    console.log("You are too young to enter.");
+    ```
+
+    However, in this case, the condition (`age < 18`) is not true because the age is 30.
+
+3. The `else if` statement checks if the `age` is greater than or equal to 18: `else if (age >= 18)`. If the previous condition (age < 18) is not true, this condition is checked. Since the age is 30, this condition is true, and the code inside the second block is executed:
+
+    ```javascript
+    console.log("You may enter.");
+    ```
+
+    This message indicates that the person is old enough to enter.
+
+So, in terms of control flow:
+
+-   If the `age` is less than 18, it prints "You are too young to enter."
+-   If the `age` is 18 or older, it prints "You may enter."
+
+The `age` variable is only checked against two conditions, and the flow of control is determined by these conditions.
+
 </br>
 
 <div style="page-break-after: always; visibility: hidden">
@@ -283,3 +324,5 @@ By implementing these improvements, I can further enhance my coding skills and c
 [16] [https://webflow.com/blog/web-designer-skills?](https://webflow.com/blog/web-designer-skills?utm_source=google&utm_medium=search&utm_campaign=SS-GoogleSearch-Nonbrand-DynamicSearchAds-Core&utm_term=aud-936979375321:dsa-45211625058___491754501325__&gclid=CjwKCAjwr_CnBhA0EiwAci5siupegDc0579nqKO-ndQOsAqm1EMLRNKykQveF2nhVx2-VCtDdjvEIBoC6zYQAvD_BwE)
 
 [17] [https://www.linkedin.com/pulse/role-teamwork-collaboration-web-design-development/](https://www.linkedin.com/pulse/role-teamwork-collaboration-web-design-development-onviqa/)
+
+[18] [https://developer.mozilla.org/en-US/docs/Glossary/Control_flow](https://developer.mozilla.org/en-US/docs/Glossary/Control_flow)
