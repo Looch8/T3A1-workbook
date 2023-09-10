@@ -427,6 +427,107 @@ In programming, data types refer to the sort of information that a variable is c
     };
     ```
 
+ </br>
+
+## <div align="center">**Q10 - Explain how arrays can be manipulated in JavaScript, using examples from the JavaScript programming language**</div>
+
+Arrays in JavaScript can be modified through various operations referred to as methods. These methods provide the means to perform actions such as adding, removing, modifying, and performing various other operations on arrays [21].
+
+**Adding Elements to an Array ('push')**:
+
+```javascript
+let colours = ["red", "blue", "green"];
+colours.push("yellow"); // Add 'yellow' to the end of the array
+// colours is now ['red', 'blue', 'green', 'yellow']
+```
+
+The `push` method adds an element, "yellow," to the end of the `colours` array, expanding its length.
+
+**Removing Elements from an Array ('pop' and 'shift')**:
+
+```javascript
+let fruits = ["apple", "banana", "mango"];
+fruits.pop(); // Remove the last element
+// fruits is now ['apple', 'banana']
+
+let numbers = [1, 2, 3, 4, 5];
+numbers.shift(); // Remove the first element
+// numbers is now [2, 3, 4, 5]
+```
+
+-   The `pop` method removes the last element from the `fruits` array, reducing its length.
+-   The `shift` method removes the first element from the `numbers` array, shifting the remaining elements.
+
+**Modifying Elements in an Array ('[]')**:
+
+```javascript
+let animals = ["lion", "tiger", "bear"];
+animals[1] = "cheetah"; // Modify the second element
+// animals is now ['lion', 'cheetah', 'bear']
+```
+
+square brackets `[]` are used to directly modify the second element of the `animals` array from "tiger" to "cheetah."
+
+**Adding Elements to the Beginning of an Array ('unshift')**:
+
+```javascript
+let fruits = ["apple", "banana", "pear"];
+fruits.unshift("mango"); // Add 'mango' to the beginning of the array
+// fruits is now ['mango', 'apple', 'banana', 'pear']
+```
+
+The `unshift` method adds "mango" to the beginning of the `fruits` array, shifting existing elements to higher indices.
+
+**Concatenating Arrays ('concat')**:
+
+```javascript
+let fruits1 = ["apple", "banana"];
+let fruits2 = ["cherry", "pear"];
+let combinedFruits = fruits1.concat(fruits2); // Concatenate arrays
+// combinedFruits is ['apple', 'banana', 'cherry', 'pear']
+```
+
+The `concat` method combines `fruits1` and `fruits2` arrays into a new array, `combinedFruits`, containing all elements.
+
+**Splicing an Array ('splice')**:
+
+```javascript
+let colours = ["red", "blue", "green", "yellow"];
+
+// Insert 'purple' at index 2 and remove 2 elements
+colours.splice(2, 2, "purple");
+
+// colours is now: ['red', 'blue', 'purple', 'yellow']
+```
+
+The `splice` method is used to insert "purple" at index 2 and remove 2 elements from the `colours` array.
+
+**Slicing an Array ('slice')**:
+
+```javascript
+let fruits = ["apple", "banana", "cherry", "date"];
+let slicedFruits = fruits.slice(1, 3); // Slice from index 1 to 2
+// slicedFruits is ['banana', 'cherry']
+```
+
+The `slice` method extracts a portion of the `fruits` array from index 1 to 2 and stores it in `slicedFruits`.
+
+**Iterating Over an Array ('forEach')**:
+
+```javascript
+let vegetables = ["carrot", "broccoli", "spinach"];
+vegetables.forEach(function (veg) {
+	console.log(veg);
+});
+// Output: carrot, broccoli, spinach
+```
+
+The `forEach` method iterates over each element in the `vegetables` array and executes a provided function, printing each vegetable to the console.
+
+  </br>
+
+## <div align="center">**Q11 - Explain how objects can be manipulated in JavaScript, using examples from the JavaScript programming languagee**</div>
+
 </br>
 
 <div style="page-break-after: always; visibility: hidden">
@@ -474,3 +575,5 @@ In programming, data types refer to the sort of information that a variable is c
 [19] [https://www.geeksforgeeks.org/what-is-type-coercion-in-javascript/](https://www.geeksforgeeks.org/what-is-type-coercion-in-javascript/)
 
 [20] [https://www.w3schools.com/js/js_datatypes.asp](https://www.w3schools.com/js/js_datatypes.asp)
+
+[21] [https://www.freecodecamp.org/news/manipulating-arrays-in-javascript/](https://www.freecodecamp.org/news/manipulating-arrays-in-javascript/)
