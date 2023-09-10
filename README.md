@@ -248,11 +248,12 @@ Code usually runs in a linear path from the first line to the last line, unless 
 
 For example, we can use conditional structures like '"if, else" statements to make decisions in our code. We can execute different blocks of code depending on whether certain conditons are true or false.
 
-```let age = 30;
+```javascript
+let age = 30;
 if (age < 18) {
-    console.log("You are too young to enter.");
+	console.log("You are too young to enter.");
 } else if (age >= 18) {
-    console.log("you may enter.");
+	console.log("you may enter.");
 }
 ```
 
@@ -282,6 +283,71 @@ So, in terms of control flow:
 -   If the `age` is 18 or older, it prints "You may enter."
 
 The `age` variable is only checked against two conditions, and the flow of control is determined by these conditions.
+
+</br>
+
+## <div align="center">**Q8 - Explain type coercion, using examples from the JavaScript programming language**</div>
+
+Type coercion involves the automatic or implicit conversion of values between different data types. This conversion occurs when various operators are applied to values, such as converting from numbers to strings, strings to numbers, or booleans to numbers. JavaScript is recognised for its relaxed or implicit data typing, which implies that it will try to execute operations even when the data types being operated upon are different. This can occasionally result in code behaving unexpectedly or not as intended [19].
+The below code shows an example with loose equality and with strict equality.
+
+**Loose Equality ('==') Comparison**
+
+```javascript
+let num = 18;
+let str = "18";
+
+if (num == str) {
+	console.log("Loosely Equal");
+} else {
+	console.log("Not Loosely Equal");
+}
+```
+
+In this code, type coercion occurs due to the loose equality operator (`==`). JavaScript converts the number `18` to a string to match the data type of `str`. Both values are now strings, and they are considered equal, resulting in "Loosely Equal" being printed.
+
+**Strict Equality ('===') Comparison**
+
+```javascript
+let num = 18;
+let str = "18";
+
+if (num === str) {
+	console.log("Strictly Equal");
+} else {
+	console.log("Not Strictly Equal");
+}
+```
+
+In this example, the strict equality operator (`===`) is used, so there is no type coercion. JavaScript checks both the value and data type. Since `num` is a number and `str` is a string with different data types, the condition evaluates to false, and "Not Strictly Equal" is printed.
+
+**Arithmetic Operation with Type Coercion**
+
+```javascript
+let num = 7;
+let str = "15";
+
+let result = num + str;
+
+console.log(result);
+// Output: "715"
+```
+
+In this code, type coercion occurs during the addition operation (`+`). JavaScript converts the number `7` into a string to perform string concatenation with `str`. The result is the string "715" because both operands are treated as strings.
+
+**Boolean Type Coercion**
+
+```javascript
+let string = "Hello world";
+
+if (string) {
+	console.log("String is truthy");
+} else {
+	console.log("String is falsy");
+}
+```
+
+In this example, type coercion happens when evaluating the `string` variable in a boolean context. Any non-empty string is considered truthy in JavaScript, so type coercion occurs, treating the string as a boolean value. "String is truthy" is printed because `string` is non-empty and therefore considered truthy.
 
 </br>
 
@@ -326,3 +392,5 @@ The `age` variable is only checked against two conditions, and the flow of contr
 [17] [https://www.linkedin.com/pulse/role-teamwork-collaboration-web-design-development/](https://www.linkedin.com/pulse/role-teamwork-collaboration-web-design-development-onviqa/)
 
 [18] [https://developer.mozilla.org/en-US/docs/Glossary/Control_flow](https://developer.mozilla.org/en-US/docs/Glossary/Control_flow)
+
+[19] [https://www.geeksforgeeks.org/what-is-type-coercion-in-javascript/](https://www.geeksforgeeks.org/what-is-type-coercion-in-javascript/)
