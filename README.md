@@ -657,6 +657,99 @@ Certainly, here are revised examples with different objects and properties:
 
 </br>
 
+## <div align="center">**Q12 - Explain how JSON can be manipulated in JavaScript, using examples from the JavaScript programming language**</div>
+
+JavaScript Object Notation (JSON), is a standardized text-based structure for presenting organised data, drawing from JavaScript's object syntax. Its primary application lies in data transfer within web applications, such as conveying information from the server to the client for web page display and vice versa [23].
+
+1. **Parsing JSON:**
+
+    JSON strings can be transformed into a JavaScript object using the `JSON.parse()` method:
+
+    ```javascript
+    const jsonData = '{"product": "Laptop", "price": 1000}';
+    const laptop = JSON.parse(jsonData);
+
+    console.log(laptop.product); // Laptop
+    console.log(laptop.price); // 1000
+    ```
+
+2. **Stringifying JSON:**
+
+    To convert a JavaScript object into a JSON string, the `JSON.stringify()` method is used:
+
+    ```javascript
+    const smartphone = {
+    	brand: "Samsung",
+    	model: "Galaxy S21",
+    	price: 800,
+    };
+    const jsonString = JSON.stringify(smartphone);
+
+    console.log(jsonString); // '{"brand":"Samsung","model":"Galaxy S21","price":800}'
+    ```
+
+3. **Modifying JSON Data:**
+
+    You can manipulate the properties of a JavaScript object like any other object and then convert it back to JSON when required:
+
+    ```javascript
+    const jsonData = '{"name": "Ella", "age": 28}';
+    const person = JSON.parse(jsonData);
+
+    person.age = 29; // Update the age property
+    person.city = "San Francisco"; // Add a new property
+
+    const updatedJsonData = JSON.stringify(person);
+
+    console.log(updatedJsonData); // '{"name":"Ella","age":29,"city":"San Francisco"}'
+    ```
+
+4. **Nested JSON:**
+
+    JSON can represent nested data structures. You can access nested properties using dot notation:
+
+    ```javascript
+    const jsonData =
+    	'{"employee": {"name": "Alex", "department": {"name": "HR"}}}';
+    const data = JSON.parse(jsonData);
+
+    console.log(data.employee.name); // Alex
+    console.log(data.employee.department.name); // HR
+    ```
+
+5. **Working with Arrays in JSON:**
+
+    JSON can represent arrays of data. Manipulate JSON arrays in JavaScript similar to regular arrays:
+
+    ```javascript
+    const jsonArray = '[{"name": "Lisa"}, {"name": "Michael"}]';
+    const employees = JSON.parse(jsonArray);
+
+    employees.push({ name: "Olivia" }); // Add an object to the array
+    employees[0].age = 30; // Modify an object in the array
+
+    const updatedJsonArray = JSON.stringify(employees);
+
+    console.log(updatedJsonArray); // '[{"name":"Lisa","age":30},{"name":"Michael"},{"name":"Olivia"}]'
+    ```
+
+6. **Error Handling:**
+
+    When parsing JSON, handle errors using a `try...catch` block othereise invalid JSON can trigger exceptions:
+
+    ```javascript
+    const invalidJson = '{"name": "Incomplete}';
+
+    try {
+    	const data = JSON.parse(invalidJson);
+    	console.log(data); // This won't be reached due to the error
+    } catch (error) {
+    	console.error("Invalid JSON:", error.message);
+    }
+    ```
+
+</br>
+
 <div style="page-break-after: always; visibility: hidden">
 \pagebreak
 </div>
@@ -706,3 +799,5 @@ Certainly, here are revised examples with different objects and properties:
 [21] [https://www.freecodecamp.org/news/manipulating-arrays-in-javascript/](https://www.freecodecamp.org/news/manipulating-arrays-in-javascript/)
 
 [22] [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_objects)
+
+[23] [https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON)
