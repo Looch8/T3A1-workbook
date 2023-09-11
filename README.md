@@ -750,6 +750,70 @@ JavaScript Object Notation (JSON), is a standardized text-based structure for pr
 
 </br>
 
+## <div align="center">**Q13 - For the code snippet provided below, write comments for each line of code to explain its functionality. In your comments you must demonstrates your ability to recognise and identify functions, ranges and classes**</div>
+
+```javascript
+// Defines a class called "Car"
+class Car {
+	// Constructor function for the "Car" class that accepts a "brand" parameter
+	constructor(brand) {
+		// Assign the "brand" parameter to the "carname" property of the instance
+		this.carname = brand;
+	}
+
+	// Define a method called "present" within the "Car" class
+	present() {
+		// Combine the "carname" property with a string to describe car ownership and return it
+		return "I have a " + this.carname;
+	}
+}
+
+// Define a class called "Model" that extends the "Car" class
+class Model extends Car {
+	// Constructor function for the "Model" class that accepts "brand" and "mod" parameters
+	constructor(brand, mod) {
+		// Call the parent class's constructor ("Car") with the "brand" parameter
+		super(brand);
+		// Assign the "mod" parameter to the "model" property of the instance
+		this.model = mod;
+	}
+
+	// Define a method called "show" within the "Model" class
+	show() {
+		// Call the "present" method from the parent class and combine it with the "model" property
+		// Return a string about the car's make and model year
+		return this.present() + ", it was made in " + this.model;
+	}
+}
+
+// Create an array called "makes" to store car brand names
+let makes = ["Ford", "Holden", "Toyota"];
+
+// Create an array called "models" using a range of years from 1980 to 2019
+let models = Array.from(new Array(40), (x, i) => i + 1980);
+
+// Define a function called "randomIntFromInterval" that generates a random integer within a specified range
+function randomIntFromInterval(min, max) {
+	// Calculate a random integer within the specified range (
+	return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
+// Iterate through each "model" in the "models" array
+for (model of models) {
+	// Choose a random car make from the "makes" array using the "randomIntFromInterval" function
+	make = makes[randomIntFromInterval(0, makes.length - 1)];
+	// Choose a random model year from the "models" array using the "randomIntFromInterval" function
+	model = models[randomIntFromInterval(0, models.length - 1)];
+
+	// Create an instance of the "Model" class with the selected make and model year
+	mycar = new Model(make, model);
+	// Generate a message about the car using the "show" method and log it to the console
+	console.log(mycar.show());
+}
+```
+
+</br>
+
 <div style="page-break-after: always; visibility: hidden">
 \pagebreak
 </div>
