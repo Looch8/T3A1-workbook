@@ -528,6 +528,133 @@ The `forEach` method iterates over each element in the `vegetables` array and ex
 
 ## <div align="center">**Q11 - Explain how objects can be manipulated in JavaScript, using examples from the JavaScript programming languagee**</div>
 
+JavaScript is built around a straightforward object-oriented model. An object in JavaScript consists of properties, where each property pairs a name (or key) with a value. When a property's value is a function, it is referred to as a method.
+JavaScript regards objects as a core data structure enabling the grouping of data and operations. The manipulation of objects includes a range of actions, such as their creation, retrieval, modification, and removal of properties and methods [22].
+
+Certainly, here are revised examples with different objects and properties:
+
+1. **Creating Objects:**
+
+    You can create objects using object literals, constructor functions, or the `class` syntax .
+
+    ```javascript
+    // Using object literal
+    const car = {
+    	make: "Toyota",
+    	model: "Camry",
+    	year: 2023,
+    };
+
+    // Using constructor function
+    function Car(make, model, year) {
+    	this.make = make;
+    	this.model = model;
+    	this.year = year;
+    }
+    const car1 = new Car("Ford", "Focus", 2022);
+
+    // Using class (ES6)
+    class Vehicle {
+    	constructor(make, model, year) {
+    		this.make = make;
+    		this.model = model;
+    		this.year = year;
+    	}
+    }
+    const car2 = new Vehicle("Honda", "Civic", 2021);
+    ```
+
+2. **Accessing Properties:**
+
+    You can access object properties using dot notation or bracket notation.
+
+    ```javascript
+    console.log(car.make); // Toyota
+    console.log(car["model"]); // Camry
+    ```
+
+3. **Modifying Properties:**
+
+    You can change the values of object properties after object creation.
+
+    ```javascript
+    car.year = 2024;
+    car["model"] = "Corolla";
+    ```
+
+4. **Adding Properties:**
+
+    You can add new properties to an object at any time.
+
+    ```javascript
+    car.color = "Blue";
+    ```
+
+5. **Deleting Properties:**
+
+    You can remove properties from an object using the `delete` keyword.
+
+    ```javascript
+    delete car.year;
+    ```
+
+6. **Methods:**
+
+    Objects can contain methods, which are functions defined as object properties.
+
+    ```javascript
+    const calculator = {
+    	multiply: function (x, y) {
+    		return x * y;
+    	},
+    	divide: function (x, y) {
+    		return x / y;
+    	},
+    };
+
+    console.log(calculator.multiply(5, 3)); // 15
+    ```
+
+7. **Object Iteration:**
+
+    You can loop through an object's properties using `for in` or `Object.keys()`, `Object.values()`, and `Object.entries()`.
+
+    ```javascript
+    for (const key in car) {
+    	console.log(key, car[key]);
+    }
+
+    const keys = Object.keys(car);
+    const values = Object.values(car);
+    const entries = Object.entries(car);
+    ```
+
+8. **Object Cloning:**
+
+    You can clone an object using various methods like the spread operator or `Object.assign()`.
+
+    ```javascript
+    const clonedCar = { ...car };
+    const clonedCar2 = Object.assign({}, car);
+    ```
+
+9. **Object Prototypes (Inheritance):**
+
+    JavaScript objects are often linked to a prototype object, allowing for inheritance of properties and methods.
+
+    ```javascript
+    function Animal(name) {
+    	this.name = name;
+    }
+
+    Animal.prototype.speak = function () {
+    	console.log(`${this.name} makes a sound.`);
+    };
+
+    const dog = new Animal("Rex");
+    dog.speak(); // Rex makes a sound.
+    ```
+
 </br>
 
 <div style="page-break-after: always; visibility: hidden">
@@ -577,3 +704,5 @@ The `forEach` method iterates over each element in the `vegetables` array and ex
 [20] [https://www.w3schools.com/js/js_datatypes.asp](https://www.w3schools.com/js/js_datatypes.asp)
 
 [21] [https://www.freecodecamp.org/news/manipulating-arrays-in-javascript/](https://www.freecodecamp.org/news/manipulating-arrays-in-javascript/)
+
+[22] [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_objects)
